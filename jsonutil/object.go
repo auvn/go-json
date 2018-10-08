@@ -15,6 +15,10 @@ func (v Value) Int() int {
 	val, _ := v.Value.(float64)
 	return int(val)
 }
+func (v Value) Int64() int64 {
+	val, _ := v.Value.(float64)
+	return int64(val)
+}
 
 func (v Value) String() string {
 	val, _ := v.Value.(string)
